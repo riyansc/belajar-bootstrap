@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Menggunakan Bootstrap</title>
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Css Punya Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Belajar Grid System</h1>
+      <p>Bootstrap membagi satu layout maksimal 12 kolom</p>
+      <p>Jadi misalnya kita akan membagi satu layout 4 kolom, maka 12/4=3. Maka yang kita gunakan adalah .col-md-3</p>
+
+      <p>Dalam tutorial sesi kali ini akan gunakan .col-md-* terlebih dahulu. di asumsikan untuk screen device dekstop</p>
+
+      <div class="row">
+        <div class="col-md-3 kotak">Kolom 1</div>
+        <div class="col-md-3 kotak">Kolom 2</div>
+        <div class="col-md-3 kotak">Kolom 3</div>
+        <div class="col-md-3 kotak">Kolom 4</div>
+      </div>
+
+      <h2>Bagi Kolom 1 ukuran 8 dan kolom 2 ukuran 4 (jadi 4+8 =12) Isi harus 12 agar penuh satu layout</h2>
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="isi">Isi Kotak besar</div>
+        </div>
+        <div class="col-md-4">
+          <div class="isi">Isi kotak kecil</div>
+        </div>
+      </div>
+
+      <h2>Mau Buat 6 kotak, yaitu 12/6=2</h2>
+
+      <div class="row">
+        <div class="col-md-2">
+          <div class="isi">Isi Kotak</div>
+        </div>
+        <div class="col-md-2">
+          <div class="isi">Isi kotak</div>
+        </div>
+        <div class="col-md-2">
+          <div class="isi">Isi kotak</div>
+        </div>
+        <div class="col-md-2">
+          <div class="isi">Isi kotak</div>
+        </div>
+        <div class="col-md-2">
+          <div class="isi">Isi kotak</div>
+        </div>
+        <div class="col-md-2">
+          <div class="isi">Isi kotak</div>
+        </div>
+      </div>
+
+      <h2>Kotak Kecil, Kotak besar dan kotak kecil (ukuran: 3+6+3 = 12)</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="isi">Kotak Kecil</div>
+        </div>
+        <div class="col-md-6"><div class="isi">Kotak Besar</div></div>
+        <div class="col-md-3"><div class="isi">Kotak Kecil</div></div>
+      </div>
+    </div>
+  </body>
+  <!-- JavaScript Bootstrap -->
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+</html>
